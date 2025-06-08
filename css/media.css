@@ -1,0 +1,225 @@
+@media (max-width: 1200px) {
+  #card {
+    .card {
+      .card-card {
+        .lists1 {
+          display: flex;
+          flex-direction: column;
+        }
+        .lists2 {
+          display: none;
+        }
+      }
+    }
+  }
+  #info {
+    .info {
+      .info-card {
+        img {
+          position: absolute;
+          left: 390px;
+          top: 250px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  #hero {
+    .hero {
+      img {
+        max-width: 400px;
+      }
+    }
+  }
+  #page2 {
+    .page2 {
+      img {
+        max-width: 400px;
+      }
+    }
+  }
+  #card {
+    .card {
+      .lists1 {
+        .card3 {
+          display: block;
+        }
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+  #info {
+    .info {
+      .info-title {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        align-items: start;
+        justify-content: start;
+      }
+      .info-card {
+        display: none;
+      }
+      .info-adaptive {
+        display: block;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #header {
+    .header {
+      nav {
+        display: none;
+      }
+      .burger-menu {
+        display: block;
+      }
+    }
+  }
+  #hero {
+    .hero {
+      flex-direction: column-reverse;
+      gap: 25px;
+      text-align: center;
+      position: relative;
+      .hero-text {
+        align-items: center;
+        .hero-info {
+          .info1 {
+            position: absolute;
+            top: 100px;
+            left: 0;
+          }
+          .info2 {
+            position: absolute;
+            top: 0;
+            left: 100px;
+          }
+          .info3 {
+            position: absolute;
+            top: 70px;
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+  #page2 {
+    .page2 {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  #card {
+    .card {
+      .card-title {
+        text-align: start;
+        justify-content: start;
+        h2 {
+          max-width: 350px;
+        }
+        p {
+          max-width: 350px;
+        }
+      }
+    }
+  }
+  #footer {
+    .footer {
+      .footer-body {
+        display: flex;
+        flex-direction: column;
+        .footer-contact-h4 {
+          display: none;
+        }
+        .footer-info {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  #card {
+    .card {
+      align-items: center;
+      justify-content: center;
+      .card-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        h2 {
+          max-width: 270px;
+          justify-content: start;
+        }
+        .card-h2 {
+          .card-icon {
+            display: block;
+          }
+        }
+      }
+      .card-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 300px;
+        .lists1 {
+          max-width: 300px;
+          .card1 {
+            max-width: 320px;
+          }
+          .card2 {
+            max-width: 320px;
+          }
+          .card3 {
+            max-width: 320px;
+          }
+        }
+      }
+    }
+  }
+  #info {
+    .info {
+      .info-adaptive {
+        max-width: 320px;
+        img {
+          max-width: 320px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 475px) {
+  #hero {
+    .hero {
+      img {
+        max-width: 250px;
+      }
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  body {
+    max-width: 350px;
+  }
+  #card {
+    .card {
+      .card-card {
+        .lists1 {
+          max-width: 350px;
+        }
+      }
+    }
+  }
+}

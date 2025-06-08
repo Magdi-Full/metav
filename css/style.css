@@ -1,0 +1,444 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  /* outline: 1px solid blue; */
+}
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 60px;
+  @media (max-width: 1366px) {
+    max-width: 1200px;
+  }
+  @media (max-width: 1200px) {
+    max-width: 1024px;
+  }
+  @media (max-width: 1024px) {
+    max-width: 768px;
+    padding: 0 40px;
+  }
+  @media (max-width: 768px) {
+    max-width: 640px;
+  }
+  @media (max-width: 640px) {
+    max-width: 475px;
+    padding: 0;
+  }
+  @media (max-width: 475px) {
+    max-width: 350px;
+    padding: 0;
+  }
+}
+
+body {
+  background-color: #000;
+  color: #ffffff;
+}
+a {
+  font-size: clamp(0.688rem, 0.559rem + 0.59vw, 1rem);
+  font-weight: 400;
+  font-family: Poppins;
+  color: #ffffff;
+}
+h1 {
+  font-size: clamp(1.563rem, 1.048rem + 2.35vw, 2.813rem);
+  font-weight: 600;
+  font-family: Orbitron;
+}
+h2 {
+  font-size: clamp(1.25rem, 0.864rem + 1.76vw, 2.188rem);
+  font-family: Orbitron;
+  font-weight: 600;
+}
+h3 {
+  font-size: clamp(0.688rem, 0.404rem + 1.29vw, 1.375rem);
+  font-weight: 700;
+  font-family: Orbitron;
+}
+h4 {
+  font-size: clamp(0.688rem, 0.456rem + 1.06vw, 1.25rem);
+  font-weight: 600;
+  font-family: Orbitron;
+}
+p {
+  font-size: clamp(0.688rem, 0.507rem + 0.82vw, 1.125rem);
+  font-weight: 400;
+  color: #ffffffcc;
+  font-family: Poppins;
+}
+button {
+  background: #d10ed1;
+  background: linear-gradient(
+    94deg,
+    rgba(209, 14, 209, 1) 24%,
+    rgba(16, 163, 218, 1) 77%
+  );
+  font-family: Poppins;
+  padding: 12px 29px;
+  border-radius: 5px;
+  color: #ffffff;
+}
+h2 span,
+h1 span {
+  background-image: linear-gradient(
+    94deg,
+    rgba(209, 14, 209, 1) 24%,
+    rgba(16, 163, 218, 1) 77%
+  );
+  color: transparent;
+  background-clip: text;
+}
+
+/* header */
+#header {
+  padding-block: 40px;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    nav {
+      display: flex;
+      gap: 25px;
+    }
+    .burger-menu {
+      display: none;
+      font-size: 32px;
+    }
+  }
+}
+/* header */
+
+/* hero */
+#hero {
+  padding-block: 40px;
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .hero-text {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      .hero-info {
+        display: flex;
+        gap: 25px;
+      }
+      .hero-btn {
+        display: flex;
+        gap: 25px;
+        button {
+          color: #ffffff;
+        }
+        button:last-of-type {
+          background: none;
+          border: 1px solid violet;
+        }
+      }
+      p {
+        max-width: 450px;
+      }
+      h1 {
+        max-width: 550px;
+      }
+    }
+    img {
+      max-width: 560px;
+      width: 100%;
+    }
+  }
+}
+/* hero */
+
+/* page2 */
+#page2 {
+  padding-block: 40px;
+  .page2 {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: space-around;
+    .page2-text {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      p {
+        max-width: 450px;
+      }
+      button {
+        max-width: 135px;
+      }
+    }
+    img {
+      max-width: 530px;
+      width: 100%;
+    }
+  }
+}
+/* page2 */
+
+/* card */
+#card {
+  padding-block: 40px;
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    .card-title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 25px;
+      p {
+        max-width: 650px;
+      }
+      .card-h2 {
+        display: flex;
+        align-items: center;
+        .card-icon {
+          font-size: 25px;
+          display: none;
+        }
+      }
+    }
+    .card-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 35px;
+      .lists1 {
+        display: flex;
+        justify-content: space-around;
+        gap: 35px;
+        .card1 {
+          border-radius: 25px;
+          max-width: 374px;
+          display: flex;
+          flex-direction: column;
+          gap: 25px;
+          padding: 20px;
+          padding-bottom: 35px;
+          background: #090823;
+          .card-btn {
+            display: flex;
+            gap: 15px;
+          }
+          button:last-of-type {
+            border: 1px solid violet;
+            background: none;
+          }
+        }
+        .card2 {
+          border-radius: 25px;
+          max-width: 374px;
+          display: flex;
+          flex-direction: column;
+          gap: 25px;
+          padding: 20px;
+          padding-bottom: 35px;
+          background: #090823;
+          .card-btn {
+            display: flex;
+            gap: 15px;
+          }
+          button:last-of-type {
+            border: 1px solid violet;
+            background: none;
+          }
+        }
+        .card3 {
+          border-radius: 25px;
+          max-width: 374px;
+          display: flex;
+          flex-direction: column;
+          gap: 25px;
+          padding-bottom: 35px;
+          padding: 20px;
+          background: #090823;
+          .card-btn {
+            display: flex;
+            gap: 15px;
+          }
+          button:last-of-type {
+            border: 1px solid violet;
+            background: none;
+          }
+        }
+      }
+      .lists2 {
+        display: flex;
+        justify-content: space-around;
+        gap: 35px;
+        .card4 {
+          border-radius: 25px;
+          max-width: 374px;
+          display: flex;
+          flex-direction: column;
+          gap: 25px;
+          padding: 20px;
+          padding-bottom: 35px;
+          background: #090823;
+          .card-btn {
+            display: flex;
+            gap: 15px;
+          }
+          button:last-of-type {
+            border: 1px solid violet;
+            background: none;
+          }
+        }
+        .card5 {
+          border-radius: 25px;
+          max-width: 374px;
+          display: flex;
+          flex-direction: column;
+          gap: 25px;
+          padding: 20px;
+          padding-bottom: 35px;
+          background: #090823;
+          .card-btn {
+            display: flex;
+            gap: 15px;
+          }
+          button:last-of-type {
+            border: 1px solid violet;
+            background: none;
+          }
+        }
+        .card6 {
+          border-radius: 25px;
+          max-width: 374px;
+          display: flex;
+          flex-direction: column;
+          gap: 25px;
+          padding-bottom: 35px;
+          padding: 20px;
+          background: #090823;
+          .card-btn {
+            display: flex;
+            gap: 15px;
+          }
+          button:last-of-type {
+            border: 1px solid violet;
+            background: none;
+          }
+        }
+      }
+    }
+  }
+}
+/* card */
+
+/* info */
+#info {
+  padding-block: 200px;
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    .info-title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 25px;
+      p {
+        max-width: 561px;
+      }
+    }
+    .info-card {
+      position: relative;
+      height: 650px;
+      background-image: url(https://www.domusweb.it/content/dam/domusweb/it/art/2022/03/24/decentraland-il-luogo-pi-simile-al-metaverso-che-ci-esista-oggi/festival-544e6a4d23a2af5598429242bb998b81.jpg.foto.rmedium.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      border: 2px solid #64cef5;
+      border-radius: 25px;
+      padding-bottom: 50px;
+      padding-left: 50px;
+      h1 {
+        padding-top: 550px;
+        display: flex;
+        align-items: flex-end;
+      }
+      img {
+        width: 120px;
+        height: 120px;
+        position: absolute;
+        top: 240px;
+        right: 600px;
+      }
+    }
+    .info-adaptive {
+      display: none;
+      img {
+        max-width: 350px;
+        border: 2px solid #64cef5;
+        border-radius: 25px;
+      }
+      .info-adaptive-text {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        .play {
+          font-size: 35px;
+          background: rgb(77, 77, 77);
+          padding: 15px;
+          padding-bottom: 5px;
+          border-radius: 60px;
+        }
+      }
+    }
+  }
+}
+/* info */
+
+/* footer */
+#footer {
+  padding-block: 40px;
+  background: #090823;
+  .footer {
+    .footer-title {
+      display: flex;
+      flex-direction: column;
+      gap: 23px;
+      p {
+        max-width: 450px;
+      }
+    }
+    .footer-body {
+      display: flex;
+      justify-content: space-between;
+      gap: 50px;
+      .footer-info {
+        display: flex;
+        gap: 50px;
+        .table1,
+        .table2 {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+        }
+      }
+      .footer-contact {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        .footer-img {
+          display: flex;
+          gap: 25px;
+        }
+        p {
+          max-width: 250px;
+        }
+      }
+    }
+  }
+}
+/* footer */
